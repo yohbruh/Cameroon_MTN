@@ -72,7 +72,7 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label text-secondary small fw-bold">Loan Amount (UGX)</label>
+                <label class="form-label text-secondary small fw-bold">Loan Amount (XAF)</label>
                 <!-- Changed type="text" to allow any custom input amount without browser max limits -->
                 <input type="text" name="amount" class="form-control" value="{{ request.args.get('amount', '1000000') }}" required placeholder="e.g. 50000000">
             </div>
@@ -98,7 +98,7 @@
 <!-- NEW: WhatsApp Number Field -->
 <div class="mb-4">
     <label class="form-label fw-semibold">WhatsApp Number</label>
-    <input type="text" name="whatsapp_phone" class="form-control" placeholder="e.g. 0700000000 or +256..." required>
+    <input type="text" name="whatsapp_phone" class="form-control" placeholder="e.g. +234xxxx.... or +234..." required>
 </div>
 
             <div class="mb-4">
